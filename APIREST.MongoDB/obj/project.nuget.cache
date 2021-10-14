@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "b/yguMbbDO7LcUVzD0Vzl2lChG5WXskSprO5QlJZ8oMXjG7AD2rzCaTJXvLHwlZxUC3VANZz553/3q/hedzasw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\timea\\source\\repos\\APIREST.Develop.Consume\\APIREST.MongoDB\\APIREST.MongoDB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\timea\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\timea\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\timea\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\timea\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\timea\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\timea\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
