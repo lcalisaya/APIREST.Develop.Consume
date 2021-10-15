@@ -29,9 +29,10 @@ namespace APIREST.MongoDB.Repositories
             return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public Task<TVProgram> GetTVProgramById(string id)
+        public async Task<TVProgram> GetTVProgramById(string id)
         {
-            throw new NotImplementedException();
+            //Get just the document that matches the id sent
+            return await Collection.FindAsync(new BsonDocument() {{ "_id", new ObjectId(id) }}).Result.FirstAsync();
         }
 
         public Task InsertTVProgram(TVProgram program)
