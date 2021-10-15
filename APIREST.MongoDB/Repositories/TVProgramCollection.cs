@@ -1,6 +1,7 @@
 ﻿using APIREST.MongoDB.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -43,8 +44,23 @@ namespace APIREST.MongoDB.Repositories
         {
             //Create a filter
             var filter = Builders<TVProgram>.Filter.Eq(doc => doc.Id, program.Id);
+
+            //Only set the fields which will be updated
+            //var fieldsToUpdate = Builders<TVProgram>.Update.Set(doc => doc.Name, program.Name)
+                                                        //.Set(doc => doc.Schedule, program.Schedule)
+                                                        //.Set(doc => doc.Driver, program.Driver)
+                                                        //.Set(doc => doc.Gender, program.Gender)
+                                                        //.Set(doc => doc.TVChannel, program.TVChannel)
+                                                        //.Set(doc => doc.ThereAreGuests, program.ThereAreGuests)
+                                                        //.Set(doc => doc.IsLiveBroadcast, program.IsLiveBroadcast);
+
+
             //Replace the filtered document with the document sent
-            await Collection.ReplaceOneAsync(filter, program);
+            //await Collection.UpdateOneAsync(filter, fieldsToUpdate);
+
+            //Replace all the key:values of the document
+            await Collection.ReplaceOneAsync(filter, program); 
+
         }
     }
 }

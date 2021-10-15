@@ -1,3 +1,4 @@
+using APIREST.MongoDB.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,8 @@ namespace APIREST.MongoDB
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIREST.MongoDB", Version = "v1" });
             });
+
+            services.AddTransient<ITVProgramCollection, TVProgramCollection>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

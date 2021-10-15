@@ -13,5 +13,6 @@ namespace APIREST.MongoDB.Models
         public string TVChannel { get; set; }
         public bool ThereAreGuests { get; set; }
         public bool IsLiveBroadcast { get; set; }
+        public string Name { get; set; }
     }
 }
