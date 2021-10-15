@@ -1,9 +1,7 @@
 ﻿using APIREST.MongoDB.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace APIREST.MongoDB.Repositories
@@ -29,20 +27,24 @@ namespace APIREST.MongoDB.Repositories
             return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public async Task<TVProgram> GetTVProgramById(string id)
+        public async Task<TVProgram> GetTVProgramById(string idDocument)
         {
             //Get just the document that matches the id sent
-            return await Collection.FindAsync(new BsonDocument() {{ "_id", new ObjectId(id) }}).Result.FirstAsync();
+            return await Collection.FindAsync(new BsonDocument() {{ "_id", new ObjectId(idDocument) }}).Result.FirstAsync();
         }
 
-        public Task InsertTVProgram(TVProgram program)
+        public async Task InsertTVProgram(TVProgram program)
         {
-            throw new NotImplementedException();
+            //Insert directly the program sent
+            await Collection.InsertOneAsync(program);
         }
 
-        public Task UpdateTVProgram(TVProgram program)
+        public async Task UpdateTVProgram(TVProgram program)
         {
-            throw new NotImplementedException();
+            //Create a filter
+            var filter = Builders<TVProgram>.Filter.Eq(doc => doc.Id, program.Id);
+            //Replace the filtered document with the document sent
+            await Collection.ReplaceOneAsync(filter, program);
         }
     }
 }
