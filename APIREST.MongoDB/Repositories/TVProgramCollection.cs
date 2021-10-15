@@ -1,4 +1,6 @@
 ﻿using APIREST.MongoDB.Models;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,16 @@ namespace APIREST.MongoDB.Repositories
 {
     public class TVProgramCollection : ITVProgramCollection
     {
-        public Task DeleteTVProgram(string id)
+        internal MongoDBRepository _repository = new MongoDBRepository();
+        private readonly IMongoCollection<TVProgram> Collection;
+        public TVProgramCollection()
         {
-            throw new NotImplementedException();
+            Collection = _repository.Database.GetCollection<TVProgram>("TVPrograms");
+        }
+        public async Task DeleteTVProgram(string idDocument)
+        {
+            var filter = Builders<TVProgram>.Filter.Eq(tvp => tvp.Id, new ObjectId(idDocument));
+            await Collection.DeleteOneAsync(filter);
         }
 
         public Task<List<TVProgram>> GetAllTVPrograms()
