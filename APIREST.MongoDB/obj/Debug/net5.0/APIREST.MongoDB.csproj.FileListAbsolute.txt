@@ -38,3 +38,4 @@ C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\ne
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\ref\APIREST.MongoDB.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.pdb
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.genruntimeconfig.cache
+C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.csproj.AssemblyReference.cache

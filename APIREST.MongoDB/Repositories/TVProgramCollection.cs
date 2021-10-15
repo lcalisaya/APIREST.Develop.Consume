@@ -18,13 +18,15 @@ namespace APIREST.MongoDB.Repositories
         }
         public async Task DeleteTVProgram(string idDocument)
         {
+            //Create a filter and then delete it 
             var filter = Builders<TVProgram>.Filter.Eq(tvp => tvp.Id, new ObjectId(idDocument));
             await Collection.DeleteOneAsync(filter);
         }
 
-        public Task<List<TVProgram>> GetAllTVPrograms()
+        public async Task<List<TVProgram>> GetAllTVPrograms()
         {
-            throw new NotImplementedException();
+            //Find all documents according object sent and convert them to a list
+            return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
         public Task<TVProgram> GetTVProgramById(string id)
