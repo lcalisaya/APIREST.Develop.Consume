@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace APIREST.MongoDB.Models
+namespace APIREST.MongoDB.Data
 {
     public class TVProgram
     {

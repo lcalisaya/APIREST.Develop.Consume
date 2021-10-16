@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Y4DdDdP1zqhDxN7I4Nxu5eXm6CChlg73ZuFn3e08L/dm/wBFwtu3Qa8CJa03iThEgh3gDBCGNe4x1KZgQtFLKQ==",
+  "dgSpecHash": "mYD5TUFeNaAFOEI1tgTVy9YOPuA+FOy3tEOBRfz/Os8Vz1yXhoXE5s/WNvuYgF+S1p76ky8WuNGEv69TECtjqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\timea\\source\\repos\\APIREST.Develop.Consume\\APIREST.MongoDB.Data\\APIREST.MongoDB.Data.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\timea\\.nuget\\packages\\mongodb.bson\\2.13.2\\mongodb.bson.2.13.2.nupkg.sha512",
+    "C:\\Users\\timea\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

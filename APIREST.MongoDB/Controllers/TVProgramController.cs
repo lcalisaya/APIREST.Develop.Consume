@@ -1,4 +1,4 @@
-﻿using APIREST.MongoDB.Models;
+﻿using APIREST.MongoDB.Data;
 using APIREST.MongoDB.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;

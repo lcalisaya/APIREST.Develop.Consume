@@ -23,6 +23,9 @@ C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\bin\Debug\ne
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\bin\Debug\net5.0\APIREST.MongoDB.Data.dll
+C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\bin\Debug\net5.0\APIREST.MongoDB.Data.pdb
+C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.AssemblyInfoInputs.cache
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB\obj\Debug\net5.0\APIREST.MongoDB.AssemblyInfo.cs

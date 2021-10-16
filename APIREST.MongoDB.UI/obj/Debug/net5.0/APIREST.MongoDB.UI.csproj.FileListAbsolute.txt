@@ -325,7 +325,6 @@ C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\bin\Debug
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\obj\Debug\net5.0\APIREST.MongoDB.UI.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\obj\Debug\net5.0\APIREST.MongoDB.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\obj\Debug\net5.0\APIREST.MongoDB.UI.AssemblyInfoInputs.cache
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.UI\obj\Debug\net5.0\APIREST.MongoDB.UI.AssemblyInfo.cs
