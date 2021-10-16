@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIREST.MongoDB", "APIREST.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIREST.MongoDB.UI", "APIREST.MongoDB.UI\APIREST.MongoDB.UI.csproj", "{F5AF1431-441E-4E5F-BA8F-0308338FEC28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIREST.MongoDB.Data", "APIREST.MongoDB.Data\APIREST.MongoDB.Data.csproj", "{DD1F372C-0790-4DB9-AEED-4F817F274411}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F5AF1431-441E-4E5F-BA8F-0308338FEC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5AF1431-441E-4E5F-BA8F-0308338FEC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5AF1431-441E-4E5F-BA8F-0308338FEC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1F372C-0790-4DB9-AEED-4F817F274411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1F372C-0790-4DB9-AEED-4F817F274411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1F372C-0790-4DB9-AEED-4F817F274411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1F372C-0790-4DB9-AEED-4F817F274411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
