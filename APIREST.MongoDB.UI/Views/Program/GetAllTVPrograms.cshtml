@@ -1,0 +1,77 @@
+﻿@model IEnumerable<APIREST.MongoDB.Data.TVProgram>
+
+@{
+    ViewData["Title"] = "All TV Programs";
+}
+
+<h1>All TV Programs</h1>
+
+<p>
+    <a asp-action="CreateTVProgram">Create New TV Program</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Driver)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Schedule)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TVChannel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThereAreGuests)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsLiveBroadcast)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Driver)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schedule)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TVChannel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThereAreGuests)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsLiveBroadcast)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

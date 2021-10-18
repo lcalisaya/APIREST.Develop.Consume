@@ -1,3 +1,4 @@
+using APIREST.MongoDB.UI.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +25,8 @@ namespace APIREST.MongoDB.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddHttpClient<ProgramController>(
+                client => { client.BaseAddress = new Uri("https://localhost:44394"); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
