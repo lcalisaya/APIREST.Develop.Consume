@@ -34,11 +34,13 @@ namespace APIREST.MongoDB.UI.Controllers
             return View(tvprograms);
         }
 
-        public async Task<TVProgram> GetTVProgramDetails(string id)
+        public async Task<IActionResult> GetTVProgramDetails(string id)
         {
-            return await JsonSerializer.DeserializeAsync<TVProgram>
+            var tvProgram = await JsonSerializer.DeserializeAsync<TVProgram>
                 (await _httpClient.GetStreamAsync($"api/TVProgram/{id}"),
                     new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+            return View(tvProgram);
+            
         }
 
         public IActionResult CreateTVProgram() 

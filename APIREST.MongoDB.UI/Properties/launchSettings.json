@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "https://localhost:44359/Program/GetAllTVPrograms",
+      "applicationUrl": "http://localhost:39949",
       "sslPort": 44359
     }
   },
