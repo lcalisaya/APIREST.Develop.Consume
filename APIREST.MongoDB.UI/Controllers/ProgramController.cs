@@ -45,17 +45,21 @@ namespace APIREST.MongoDB.UI.Controllers
         {
             return View();
         }
-
-        public async Task SaveTVProgram(TVProgram tvprogram)
+        [HttpPost]
+        public async Task<IActionResult> SaveTVProgram(TVProgram tvprogram)
         {
             var productJson = new StringContent(JsonSerializer.Serialize(tvprogram),
                                                 Encoding.UTF8, "application/json");
-            if (tvprogram.Id == string.Empty)
+            if (string.IsNullOrEmpty(tvprogram.Id))
             {
                 await _httpClient.PostAsync("api/TVProgram", productJson);
+                TempData["message"] = "The TV Program has saved successfully!";
             } else {
                 await _httpClient.PutAsync($"api/TVProgram/{tvprogram.Id}", productJson);
+                TempData["message"] = "The TV Program has updated successfully!";
             }
+
+            return RedirectToAction("GetAllTVPrograms");
         }
     }
 }
