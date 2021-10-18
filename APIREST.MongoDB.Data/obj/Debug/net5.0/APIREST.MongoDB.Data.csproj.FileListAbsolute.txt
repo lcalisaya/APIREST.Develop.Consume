@@ -2,7 +2,6 @@ C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\bin\Deb
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\bin\Debug\net5.0\APIREST.MongoDB.Data.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\bin\Debug\net5.0\ref\APIREST.MongoDB.Data.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\bin\Debug\net5.0\APIREST.MongoDB.Data.pdb
-C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.csproj.AssemblyReference.cache
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.AssemblyInfoInputs.cache
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Deb
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\ref\APIREST.MongoDB.Data.dll
 C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.pdb
+C:\Users\timea\source\repos\APIREST.Develop.Consume\APIREST.MongoDB.Data\obj\Debug\net5.0\APIREST.MongoDB.Data.csproj.AssemblyReference.cache

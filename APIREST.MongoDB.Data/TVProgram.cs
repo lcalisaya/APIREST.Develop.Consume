@@ -6,7 +6,8 @@ namespace APIREST.MongoDB.Data
     public class TVProgram
     {
         [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         public string Driver { get; set; }
         public string Gender { get; set; }
         public string Schedule { get; set; }

@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "APIREST.MongoDB.UI/1.0.0": {
         "dependencies": {
+          "APIREST.MongoDB.Data": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.10",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -374,7 +375,7 @@
           "System.Collections.Immutable": "5.0.0",
           "System.Memory": "4.5.4",
           "System.Reflection.Metadata": "5.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
           "System.Text.Encoding.CodePages": "4.5.1",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
@@ -512,6 +513,20 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.2": {},
+      "MongoDB.Bson/2.13.2": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {
+            "assemblyVersion": "2.13.2.0",
+            "fileVersion": "2.13.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {}
+        }
+      },
       "System.Collections.Immutable/5.0.0": {
         "compile": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
@@ -523,14 +538,29 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.1": {},
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "compile": {
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {},
+      "APIREST.MongoDB.Data/1.0.0": {
+        "dependencies": {
+          "MongoDB.Bson": "2.13.2"
+        },
+        "runtime": {
+          "APIREST.MongoDB.Data.dll": {}
+        },
+        "compile": {
+          "APIREST.MongoDB.Data.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2300,6 +2330,13 @@
       "path": "microsoft.netcore.platforms/2.1.2",
       "hashPath": "microsoft.netcore.platforms.2.1.2.nupkg.sha512"
     },
+    "MongoDB.Bson/2.13.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qY9271GFCYLA8OB3MdQC8clJh9wnh65gcxUa5Skwh2xYryv21YAHx/VOvv4ILpkb1NhIVgy3LBQhVBldwLaqNg==",
+      "path": "mongodb.bson/2.13.2",
+      "hashPath": "mongodb.bson.2.13.2.nupkg.sha512"
+    },
     "System.Collections.Immutable/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2321,12 +2358,12 @@
       "path": "system.reflection.metadata/5.0.0",
       "hashPath": "system.reflection.metadata.5.0.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
-      "path": "system.runtime.compilerservices.unsafe/4.7.1",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+      "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
     },
     "System.Text.Encoding.CodePages/4.5.1": {
       "type": "package",
@@ -2341,6 +2378,11 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "APIREST.MongoDB.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

@@ -47,7 +47,7 @@ namespace APIREST.MongoDB.Controllers
             if (program.Name == string.Empty)
                 ModelState.AddModelError("Name", "TV Program should be sent");
 
-            program.Id = new ObjectId(id);
+            program.Id = id;
             await _database.UpdateTVProgram(program);
             return Created("TV Program created", true);
         }
