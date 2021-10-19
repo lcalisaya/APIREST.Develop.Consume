@@ -42,6 +42,13 @@ namespace APIREST.MongoDB.UI.Controllers
             return View(tvProgram);
             
         }
+        public async Task<IActionResult> EditTVProgram(string id)
+        {
+            var tvProgram = await JsonSerializer.DeserializeAsync<TVProgram>
+                (await _httpClient.GetStreamAsync($"api/TVProgram/{id}"),
+                    new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+            return View("CreateTVProgram", tvProgram);
+        }
 
         public IActionResult CreateTVProgram() 
         {
