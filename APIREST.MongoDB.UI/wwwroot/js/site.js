@@ -2,3 +2,15 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+$(document).ready(function () {
+
+    $("button").on("click", function () {
+        let idProgram = $(this).data('idprogram');
+        let url = "/Program/DeleteTVProgram/" + idProgram;
+        $("#deleteFromModal").attr("href", url)
+        $("#exampleModal").modal("show");
+    });
+});
+

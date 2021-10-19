@@ -21,9 +21,12 @@ namespace APIREST.MongoDB.UI.Controllers
         {
             return View();
         }
-        public async Task DeleteTVProgram(string id)
+
+        public async Task<IActionResult> DeleteTVProgram(string id)
         {
             await _httpClient.DeleteAsync($"api/TVProgram/{id}");
+            TempData["message"] = "The TV Program has deleted successfully!";
+            return RedirectToAction("GetAllTVPrograms"); 
         }
         public async Task<IActionResult> GetAllTVPrograms()
         {
